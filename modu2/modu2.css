@@ -1,5 +1,5 @@
 *{
-	margin: 0;
+	margin: ;
 }
 
 .body{
@@ -11,6 +11,8 @@
 }
 .header{
 	text-align: center;
+	margin-bottom: 20px;
+	
 }
 
 .p{
@@ -19,37 +21,50 @@
 	margin-left: auto;
 font-family: helvetica;
 clear: both;
-		background-color: lightgray;
+		background-color:grey;
 			width:auto;
-			margin: 2px;
+			margin: 20px;
 			border: 1px solid black;
+			padding: 10px;
+
 			}
 	
 .sub-head1{
 			background-color: lightpink;
 			float: right;
-			margin: 2px;
+			margin: 20px;
 			margin-bottom: 0px;
 			border: 1px solid black;
-			width: auto;
+			width: 20%;
+			text-align: center;
+			font-family: helvetica;
+
 
 		}
 		.sub-head2{background-color: red;
 			float: right;
-			margin: 2px;
+			margin: 20px;
 			margin-bottom: 0px;
 			border: 1px solid black;
+			width: 20%;
+			text-align: center;
+			font-family: helvetica;
+
 		}
 		.sub-head3{background-color: lightgoldenrodyellow;
 			float: right;
-			margin: 2px;
+			margin: 20px;
 			margin-bottom: 0px;
 			border: 1px solid black;
+			width: 20%;
+			text-align: center;
+			font-family: helvetica;
 
 	}
 		
 	.row
-{
+{    margin-left: 40px;
+	margin-right: 40px;
 	
 	display: flex;
 	float: left;
