@@ -1,91 +1,101 @@
+*{
+	margin: 0;
+}
 
-
-
-body{
+.body{
 	margin: 0;
 	padding: 0;
 	background-color: whitesmoke;
+	font-family: helvetica;
 
 }
-header{
+.header{
 	text-align: center;
 }
-p{
+
+.p{
 	border: 5px black;
 	margin-right: auto;
 	margin-left: auto;
 font-family: helvetica;
 clear: both;
-}
-			
-		
-		#h1{
+		background-color: lightgray;
+			width:auto;
+			margin: 2px;
+			border: 1px solid black;
+			}
+	
+.sub-head1{
 			background-color: lightpink;
 			float: right;
+			margin: 2px;
+			margin-bottom: 0px;
+			border: 1px solid black;
+			width: auto;
 
 		}
-		#h2{background-color: red;
+		.sub-head2{background-color: red;
 			float: right;
+			margin: 2px;
+			margin-bottom: 0px;
+			border: 1px solid black;
 		}
-		#h3{background-color: lightgoldenrodyellow;
+		.sub-head3{background-color: lightgoldenrodyellow;
 			float: right;
+			margin: 2px;
+			margin-bottom: 0px;
+			border: 1px solid black;
 
-		}
+	}
+		
+	.row
+{
+	
+	display: flex;
+	float: left;
 
-
-		#s1{
-			background-color: lightgray;
-			width: 500px;
-			margin-left: 16px;
-			margin-right: 16px;
-		}
-		#s2{
-			background-color:lightgray;
-			width:500px;
-			margin-left: 16px;
-			margin-right: 16px;
-			
-			}
-		#s3{
-			background-color:lightgray;
-			width:500px;
-			margin-right: 16px;
-			margin-left: 16px;
-			}
-
-
-.row{
-
-	width: 100%
 }
+ .grid-container, .grid-container-1
+{
+	display: flex;
+    display: none;
+}
+
+/*MEDIA QUERY*/
+/*DESKTOP SIZE*/
 
 @media ( min-width: 992px) {
-.col-lg-1 {
+	.row{
+		float: left;
+}
+.grid-container , .grid-container1{
+	display: none;
+}
+}
+
+/*TABLET SIZE*/
+
+@media ( min-width: 768px ) and ( max-width: 991px){
+		.grid-container , .grid-container1{
+	display: flex;
 	float: left;
-	border: 1px;
 }
-.col-lg-1{
-	width: 33%;
+	.row{
+         display: none;
+		float: left;
+	}
+
 }
-
-
-
-@media ( min-width: 768px) and( max-width: 991px){
-.col-md-1 {
-	float: left;
-	border: 1px;
-}
-.col-md-1{
-	width: 33%;
-}
-
-
-
+/*MOBILE DEVICE*/
 
 @media (max-width:767px ){
-	.col-sm-1{
+	.row{
 		float: left;
-		border: 1px;
+		display: block;
+
 }
-.col-sm-1{
-	width: 33%;
+.grid-container , .grid-container1{
+	display: none;
+
+}
+}
