@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+}
+
+.body{
+	margin: 0;
+	padding: 0;
+	background-color: whitesmoke;
+	font-family: helvetica;
+
+}
+.header{
+	text-align: center;
+}
+
+.p{
+	border: 5px black;
+	margin-right: auto;
+	margin-left: auto;
+font-family: helvetica;
+clear: both;
+		background-color: lightgray;
+			width:auto;
+			margin: 2px;
+			border: 1px solid black;
+			}
+	
+.sub-head1{
+			background-color: lightpink;
+			float: right;
+			margin: 2px;
+			margin-bottom: 0px;
+			border: 1px solid black;
+			width: auto;
+
+		}
+		.sub-head2{background-color: red;
+			float: right;
+			margin: 2px;
+			margin-bottom: 0px;
+			border: 1px solid black;
+		}
+		.sub-head3{background-color: lightgoldenrodyellow;
+			float: right;
+			margin: 2px;
+			margin-bottom: 0px;
+			border: 1px solid black;
+
+	}
+		
+	.row
+{
+	
+	display: flex;
+	float: left;
+
+}
+ .grid-container, .grid-container-1
+{
+	display: flex;
+    display: none;
+}
+
+/*MEDIA QUERY*/
+/*DESKTOP SIZE*/
+
+@media ( min-width: 992px) {
+	.row{
+		float: left;
+}
+.grid-container , .grid-container1{
+	display: none;
+}
+}
+
+/*TABLET SIZE*/
+
+@media ( min-width: 768px ) and ( max-width: 991px){
+		.grid-container , .grid-container1{
+	display: flex;
+	float: left;
+}
+	.row{
+         display: none;
+		float: left;
+	}
+
+}
+/*MOBILE DEVICE*/
+
+@media (max-width:767px ){
+	.row{
+		float: left;
+		display: block;
+
+}
+.grid-container , .grid-container1{
+	display: none;
+
+}
+}
